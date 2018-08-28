@@ -17,3 +17,4 @@ Python3 ftp server
 1. get Python3 for windows
 2. get git for windows
 3. run python3 srv.py from a terminal
+4. forward ports 2121 to your server ip (for passive connections forward ports 60000 - 61000 aswell)
