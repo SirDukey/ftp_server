@@ -1,8 +1,13 @@
 # ftp_server
 Python3 ftp server
 
+## Dependancies
+* python3
+* pyftpdlib
+
 ## How to
-Copy the myftpsrv.service file to '/etc/systemd/system/'
-Run systemctl daemon-reload for the system to see the service unit
-Run systemctl start myftpsrv
-Run systemctl enable myftpsrv to autostart on boot
+1. vim svr.py (add users, set passwords, set directories)
+2. cp myftpsrv.service /etc/systemd/system/
+3. systemctl daemon-reload
+4. systemctl start myftpsrv
+5. systemctl enable myftpsrv
