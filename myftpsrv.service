@@ -1,0 +1,15 @@
+[Unit]
+Description=FTP server
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/ftp_server
+ExecStart=/usr/bin/python3 /ftp_server/mysrv.py
+StandarOutput=journal
+StandardError=journal
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=mutli-user.target
