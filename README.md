@@ -11,3 +11,4 @@ Python3 ftp server
 3. systemctl daemon-reload
 4. systemctl start myftpsrv
 5. systemctl enable myftpsrv
+6. forward ports 2121 to your server ip (for passive connections forward ports 60000 - 61000 aswell)
